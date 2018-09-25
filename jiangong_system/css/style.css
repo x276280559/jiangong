@@ -1,0 +1,422 @@
+
+.header{
+	width:100%;
+	height:40px;
+	position: relative;
+	background-color: #f5f9fc;
+	box-shadow: 0px 1px 5px 0px #c4d0ed;
+}
+.header .header_log{
+	width: auto;
+	height: 100%;
+    font-size: 17px;
+    font-stretch: normal;
+    cursor: pointer;
+    line-height: 40px;
+    letter-spacing: 0px;
+    color: #000d2a;
+    display: block;
+   	font-weight: bold;
+   	padding-left: 20px;
+}
+.header .header_log span{
+	width:auto;
+	height:100%;font-weight: normal;
+	font-size:14px;
+}
+.header>ul{
+	width:auto;
+	height:100%;
+	font-size:14px;
+	line-height:40px;
+}
+.header>ul>li{
+	position: relative;
+	text-align: center;	
+}
+.header>ul>li::before{
+	content: "";
+    width: 0;
+    height:2px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    clear: both;
+    background-color: #ff9200;
+    transition: all 0.5s;
+}
+.header>ul>li:hover>a{
+	color: #000d2a;
+}
+.header>ul>li:hover::before{
+ 	width: 80%;
+ 	left:10%;
+	right:0;
+}
+.header>ul>li>a{
+	padding:0 10px;
+	border-left:1px solid #e3e3e3;
+	text-decoration: none;
+}
+.header>ul>li>img{
+	font-size:24px;
+}
+.header>ul>li.first{
+	padding-left:24px;
+	background: url(../img/head_user.png) no-repeat 0 8px;
+	background-size:24px;
+}
+.header>ul>li.first>a{
+	border-left:none;
+}
+/*注销登录*/
+.header>ul>li.first .logout{
+	width:80%;
+	height: 25px;
+	background-color: #f6f9fc;
+	display: none;
+	position: absolute;
+	left:0px;
+	top:40px;
+	text-align: center;
+    line-height: 25px;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0px 20px 0px 20px;
+    margin-left:10%;
+	cursor: pointer;
+}
+.header>ul>li.first:hover .logout{
+	display: block;
+}
+.unread-msg-panel {
+    display: none;
+    width: 300px;
+    background-color: #FFFFFF;
+    font-size: 12px;
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    color: #4d535d;
+    box-shadow: 0px 1px 20px 2px #a2acc4;
+}
+.unread-msg-panel .msg-panel-title {
+    line-height: 30px;
+    text-align: center;
+    border-bottom: 1px solid #d7d7d7;
+}
+.msg-panel-content li:last-of-type {
+    border: none;
+}
+.unread-msg-panel .msg-panel-content li {
+    cursor: pointer;
+    /*padding: 5px 15px;*/
+    box-sizing: border-box;
+    border-bottom: 1px dashed #d9d9d9;
+}
+.unread-msg-panel .msg-panel-content li:hover{
+	background-color: #f6f9fc;
+}
+.text-center {
+    text-align: center;
+}
+.unread-msg-panel .msg-panel-bottom {
+	width:100%;
+	height:30px;
+    line-height: 30px;
+    background-color: #f5f9fc;
+    padding: 0 15px;
+}
+.msg-panel-bottom .marked-read {
+    cursor: pointer;
+    float: left;
+}
+.msg-panel-bottom .look-whole {
+    cursor: pointer;
+    float: right;
+    color: #417fcd;
+}
+.msg-panel-bottom .look-whole:after {
+    content: '';
+    width: 15px;
+    height: 20px;
+    background: url(../img/top-bar_fold_unfold.png) no-repeat 4px 7px;
+    display: inline-block;
+}
+.header>ul>li.info:hover .unread-msg-panel{
+	display: block;
+}
+.Options {
+    padding: 4px 0;
+    height: auto;
+    position: absolute;
+    font-size: 14px;
+    width: auto;
+    display: none;
+    color: rgba(0,13,42,.64);
+    right: 0px;
+    top: 100%;
+    background-color: #f6f9fc;
+    box-shadow: 0px 1px 15px -4px #c5d1ee;
+    border-radius: 1px;
+    border: solid 1px #dcdee0;
+}
+.Options li {
+    text-align: center;
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0px 20px 0px 20px;
+    list-style: none;
+}
+.Options li a {
+    color: #666;
+    text-decoration: none;
+}
+.header>ul>li.assist:hover .Options{
+	display: block;
+}
+.header>ul>li.assist .Options li:hover{
+	width:100%;
+	height: 25px;
+	background-color:#F7ECB5;
+}
+/*内容左边导航条*/
+.Condition {
+    width: 138px;
+    height: calc(100% - 40px);
+    float: left;
+    position: relative;
+    z-index: 2;
+    background-color: #5b6173;
+    overflow:scroll;
+}
+.Scroll {
+    width: 100%;
+    /*height: 100%;*/
+    float: left;
+    background-color: #5b6173;
+}
+.Scroll .Container {
+    width: 100%;
+    height: 100%;
+}
+.Condition .ProjectModule {
+    width: 100%;
+    height: 60px;
+    font-size: 14px;
+    float: left;
+    cursor: pointer;
+    color: #FFFFFF;
+    line-height: 60px;
+    background-position: 15px center;
+    text-align: right;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+.PM_Text {
+    text-align: left;
+    margin-left: 25px;
+}
+.Condition .site_select{
+	width:100%;
+	height:auto;
+}
+.Condition .site_select .select_child{
+	padding: 0px;
+	background-position: 25px center;
+}
+.Condition .site_select .select_child .PM_Text{
+	margin-left: 50px;
+}
+.icon_Home {
+    background-repeat: no-repeat;
+   	background-image: url("../img/images/Home.png");
+}
+.icon_ProjectModel {
+    background-repeat: no-repeat;
+   	background-image: url("../img/images/4D.png");
+}
+.icon_ProjectGIS {
+    background-repeat: no-repeat;
+   	background-image: url("../img/images/site.png");
+}
+.icon_ProjectFile {
+    background-repeat: no-repeat;
+   	background-image: url("../img/images/resource.png");
+}
+.icon_Issue {
+    background-repeat: no-repeat;
+   	background-image: url("../img/images/doc.png");
+}
+.icon_Setting {
+    background-repeat: no-repeat;
+   	background-image: url("../img/images/set.png");
+}
+/*子菜单*/
+.icon_quality {
+    background-repeat: no-repeat;
+   	background-image: url("../img/images/quality.png");
+}
+.icon_safety {
+    background-repeat: no-repeat;
+   	background-image: url("../img/images/safety.png");
+}
+.icon_structure {
+    background-repeat: no-repeat;
+   	background-image: url("../img/images/structure.png");
+}
+.icon_dosage {
+    background-repeat: no-repeat;
+   	background-image: url("../img/images/dosage.png");
+}
+.icon_production {
+    background-repeat: no-repeat;
+   	background-image: url("../img/images/production.png");
+}
+.icon_info {
+    background-repeat: no-repeat;
+   	background-image: url("../img/images/info.png");
+}
+.icon_personnel {
+    background-repeat: no-repeat;
+   	background-image: url("../img/images/personnel.png");
+}
+.icon_classify {
+    background-repeat: no-repeat;
+   	background-image: url("../img/images/classify.png");
+}
+.icon_uploading {
+    background-repeat: no-repeat;
+   	background-image: url("../img/images/uploading.png");
+}
+.icon_schedule {
+    background-repeat: no-repeat;
+   	background-image: url("../img/images/schedule.png");
+}
+.icon_authentication {
+    background-repeat: no-repeat;
+   	background-image: url("../img/images/authentication.png");
+}
+.icon_node {
+    background-repeat: no-repeat;
+   	background-image: url("../img/images/node.png");
+}
+.icon_ziguan {
+    background-repeat: no-repeat;
+   	background-image: url("../img/images/ziguan.png");
+}
+.icon_issue {
+    background-repeat: no-repeat;
+   	background-image: url("../img/images/issue.png");
+}
+/*点击切换的样式*/
+.Condition .ProjectModule.White {
+    color: #f5a700;
+    border-left: 5px solid #f7a500;
+    /*padding-left: 10px;
+    background-position-x: 10px;*/
+    background-color: #444d5e;
+}
+.Condition .ProjectModule.White_bg{
+	background-color: #444d5e;
+}
+.icon_Home.White {
+    background-repeat: no-repeat;
+    background-image: url("../img/images/Home_Select.png");
+}
+.icon_ProjectModel.White {
+    background-repeat: no-repeat;
+   	background-image: url("../img/images/4D_Select.png");
+}
+.icon_ProjectGIS.White {
+    background-repeat: no-repeat;
+   	background-image: url("../img/images/site_Select.png");
+}
+.icon_ProjectFile.White {
+    background-repeat: no-repeat;
+   	background-image: url("../img/images/resource_Select.png");
+}
+.icon_Issue.White {
+    background-repeat: no-repeat;
+   	background-image: url("../img/images/doc_Select.png");
+}
+.icon_Setting.White {
+    background-repeat: no-repeat;
+   	background-image: url("../img/images/set_Select.png");
+}
+/*子菜单*/
+.icon_quality.White {
+    background-repeat: no-repeat;
+   	background-image: url("../img/images/quality_Select.png");
+}
+.icon_safety.White {
+    background-repeat: no-repeat;
+   	background-image: url("../img/images/safety_Select.png");
+}
+.icon_structure.White {
+    background-repeat: no-repeat;
+   	background-image: url("../img/images/structure_Select.png");
+}
+.icon_dosage.White {
+    background-repeat: no-repeat;
+   	background-image: url("../img/images/dosage_Select .png");
+}
+.icon_production.White {
+    background-repeat: no-repeat;
+   	background-image: url("../img/images/production_Select.png");
+}
+.icon_info.White {
+    background-repeat: no-repeat;
+   	background-image: url("../img/images/info_Select.png");
+}
+.icon_personnel.White {
+    background-repeat: no-repeat;
+   	background-image: url("../img/images/personnel_Select.png");
+}
+.icon_classify.White {
+    background-repeat: no-repeat;
+   	background-image: url("../img/images/classify_Select.png");
+}
+.icon_uploading.White {
+    background-repeat: no-repeat;
+   	background-image: url("../img/images/uploading_Select.png");
+}
+.icon_schedule.White {
+    background-repeat: no-repeat;
+   	background-image: url("../img/images/schedule_Select.png");
+}
+.icon_authentication.White {
+    background-repeat: no-repeat;
+   	background-image: url("../img/images/authentication_Select.png");
+}
+.icon_node.White {
+    background-repeat: no-repeat;
+   	background-image: url("../img/images/node-Select.png");
+}
+.icon_ziguan.White {
+    background-repeat: no-repeat;
+   	background-image: url("../img/images/ziguan_Select.png");
+}
+.icon_issue.White {
+    background-repeat: no-repeat;
+   	background-image: url("../img/images/issue_Select.png");
+}
+/*右边iframe结构层*/
+.Content {
+    width: calc(100% - 139px);
+    height: calc(100% - 41px);
+    float: left;
+    margin-top: 1px;
+}
+.Content iframe {
+     width: 100%; 
+     height: 100%; 
+     display: block; 
+     border:none;
+}

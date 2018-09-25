@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>首页</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+		<div class="header">
+			<div class="header_log fl">
+				市政PM管理平台
+				<span>--</span>
+				<span>汕头市苏埃通道工程</span>
+			</div>
+			<ul class="fr">
+				<li class="first fl">
+					<a href="">欢迎您，admin</a>
+					<div class="logout">退出登录</div>
+				</li>
+				<li class="info fl">
+					<a href=""><img src="img/head_info.png"/></a>
+					<div class="unread-msg-panel">
+            <div class="msg-panel-title">未读通知</div>
+            <div class="msg-panel-content">
+              <ul class="new-list js-marked-as-read"><li class="text-center">暂无最新未读通知</li></ul>
+            </div>
+            <div class="msg-panel-bottom">
+                <span data-all="1" class="marked-read js-marked-all-read">全部标记为已读</span>
+                <span class="look-whole">查看全部</span>
+            </div>
+        	</div>
+				</li>
+				<li class="assist fl">
+					<a href="">帮助</a>
+					<ul class="Options">
+            <li><a download="Revit转换插件.zip" href="https://www.probim.cn/Resource/PluginFile/Revit转换插件.zip">Revit转换插件</a></li>
+            <li><a download="Navisworks转换插件.zip" href="https://www.probim.cn/Resource/PluginFile/Navisworks转换插件.zip">Navisworks转换插件</a></li>
+            <li onclick="window.location.href='https://www.probim.cn/Manual/default.html'" style="cursor:pointer;">
+                <a>用户手册</a>
+            </li>
+        </ul>
+				</li>
+			</ul>
+		</div>
+		<div class="Condition">
+	    <div class="Scroll">
+        <div class="Container">
+        	
+        	<div class="title_item">
+		        <div class="ProjectModule icon_Home">
+		        	<div class="PM_Text">项目主页</div>
+		        </div>
+		      </div>
+		      
+		      <div class="title_item">
+		        <div class="ProjectModule icon_ProjectModel">
+		            <div class="PM_Text">4D模型</div>
+		        </div>
+		      </div>  
+		      
+		      <div class="title_item">
+		        <div class="ProjectModule icon_ProjectGIS thereinto_select">
+		            <div class="PM_Text">现场管理</div>
+		        </div>
+		        <!--现场管理 下拉 start-->
+		        <div class="site_select" style="display: none;">
+	        		<div class="ProjectModule icon_quality select_child ">
+			          <div class="PM_Text">质量巡检</div>
+			        </div>
+			        <div class="ProjectModule icon_safety select_child ">
+			          <div class="PM_Text">安全巡检</div>
+			        </div> 
+		        </div>
+		        <!--现场管理 下拉 end-->
+		      </div>
+		      
+		      <div class="title_item">
+		        <div class="ProjectModule icon_ProjectFile thereinto_select">
+		            <div class="PM_Text">资源管理</div>
+		        </div>
+		        <!--资源管理 下拉 start-->
+		        <div class="site_select" style="display: none;">
+	        		<div class="ProjectModule icon_structure select_child ">
+			          <div class="PM_Text">构建清单</div>
+			        </div>
+			        <div class="ProjectModule icon_dosage select_child ">
+			          <div class="PM_Text">资源用量</div>
+			        </div>
+			        <div class="ProjectModule icon_production select_child ">
+			          <div class="PM_Text">产值计划</div>
+			        </div>
+		        </div>
+		        <!--资源管理 下拉 end-->
+		      </div>  
+		      
+		      <div class="title_item">
+		        <div class="ProjectModule icon_Issue">
+		            <div class="PM_Text">个人文档</div>
+		        </div>
+		      </div>
+		      
+		      <div class="title_item">
+		        <div class="ProjectModule icon_Setting thereinto_select"> 
+		            <div class="PM_Text">项目设置</div>
+		        </div>
+		        <!--项目设置 下拉 start-->
+		        <div class="site_select" style="display: none;">
+			        <div class="ProjectModule icon_info select_child ">
+			          <div class="PM_Text">项目信息</div>
+			        </div>
+			        <div class="ProjectModule icon_personnel select_child ">
+			          <div class="PM_Text">人员管理</div>
+			        </div>
+			        <div class="ProjectModule icon_classify select_child ">
+			          <div class="PM_Text">模型分类</div>
+			        </div>
+			        <div class="ProjectModule icon_uploading select_child ">
+			          <div class="PM_Text">模型上传</div>
+			        </div>
+			        <div class="ProjectModule icon_schedule select_child ">
+			          <div class="PM_Text">进度计划</div>
+			        </div>
+			        <div class="ProjectModule icon_authentication select_child ">
+			          <div class="PM_Text">进度认证</div>
+			        </div>
+			        <div class="ProjectModule icon_node select_child ">
+			          <div class="PM_Text">关键节点</div>
+			        </div>
+			        <div class="ProjectModule icon_ziguan select_child ">
+			          <div class="PM_Text">资源管理</div>
+			        </div>
+			        <div class="ProjectModule icon_issue select_child ">
+			          <div class="PM_Text">问题类型</div>
+			        </div>
+			      </div>  
+		        <!--项目设置 下拉 end-->
+		      </div>  
+	      </div>  
+			</div>
+		</div>
+		<div id="ProjectContainer" class="Content">
+			<iframe id="" src="http://news.baidu.com/" scrolling="no" frameborder="0" width="100%" height="100%"></iframe>
+		</div>
+  </body>
+</html>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<!--<script type="text/javascript" src="js/bootstrap.min.js"></script>-->
+<script type="text/javascript">
+	
+	var ProjectModuleAll = document.querySelectorAll(".ProjectModule");
+	//console.log(ProjectModuleAll)
+	for(var i = 0; i<ProjectModuleAll.length; i++){
+		(function(m){
+			ProjectModuleAll[m].onclick = function(){
+				for(var i = 0; i<ProjectModuleAll.length; i++){
+					//	初始化数据。
+					ProjectModuleAll[i].classList.remove("White","White_bg");
+				}
+				//添加样式
+				ProjectModuleAll[m].classList.add("White","White_bg");
+				if(ProjectModuleAll[m].classList.contains("thereinto_select")){
+					//获取父级元素
+					var ele = ProjectModuleAll[m].parentNode;
+					ff_text(ele)
+					//获取兄弟元素
+					var ele_select = ele.children[1];
+					//开关滑动事件。
+					$(ele_select).slideToggle();
+					
+					function ff_text(ele){
+						var ele_child = ele.childNodes;
+						for(var i=0 in ele_child){
+							if(ele_child[i].nodeName == "#text" && !/\S/.test(ele_child[i].nodeValue)){
+								//删除数组中的text
+	              ele.removeChild(ele_child[i]);
+							}
+						}
+					}
+				}
+			}
+		})(i)
+	}
+</script>
